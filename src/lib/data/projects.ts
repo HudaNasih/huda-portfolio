@@ -1,0 +1,130 @@
+import { Project, Skill } from '@/types'
+
+export const projects: Project[] = [
+  {
+    slug: 'arbela',
+    title: 'Arbela E-Commerce Platform',
+    emoji: '🛍️',
+    url: 'https://arbela.store',
+    urlLabel: 'arbela.store',
+    description: 'A comprehensive e-commerce solution with multi-panel architecture',
+    tags: ['Nuxt.js', 'Vuetify'],
+    features: [
+      'Customer-facing e-commerce website',
+      'Admin management panel',
+      'Seller dashboard',
+      'Complete order & inventory management',
+    ],
+    role: 'Senior Frontend Developer',
+    year: '2022',
+    featured: true,
+  },
+  {
+    slug: 'cardhouzz',
+    title: 'cardhouzz',
+    emoji: '🏪',
+    url: '#', // Not explicitly visible in image, placeholder provided
+    urlLabel: '',
+    description: 'Enterprise POS and inventory management solution',
+    tags: ['Vue.js', 'Vuetify'],
+    features: [
+      'Point of Sale interface',
+      'Supplier management panel',
+      'Merchant admin dashboard',
+      'Real-time inventory tracking',
+    ],
+    role: 'Senior Frontend Developer',
+    year: '2022',
+    featured: true,
+  },
+  {
+    slug: 'sim-distribution',
+    title: 'SIM Distribution System',
+    emoji: '📱',
+    url: '#', // Not explicitly visible in image, placeholder provided
+    urlLabel: '',
+    description: 'Telecommunications SIM card distribution platform',
+    tags: ['Vue.js', 'Vuetify'],
+    features: [
+      'Distribution management',
+      'Inventory tracking',
+      'Dealer dashboard',
+      'Real-time reporting',
+    ],
+    role: 'Senior Frontend Developer',
+    year: '2025',
+    featured: true,
+  },
+  {
+    slug: 'eventy',
+    title: 'Eventy',
+    emoji: '🎉',
+    url: 'https://eventyapp.org',
+    urlLabel: 'eventyapp.org',
+    description: 'Event management and ticketing platform',
+    tags: ['Vue.js', 'Vuetify'],
+    features: [
+      'Event creation & management',
+      'Ticketing system',
+      'Attendee management',
+      'Analytics dashboard',
+    ],
+    role: 'Senior Frontend Developer',
+    year: '2025',
+    featured: true,
+  },
+  {
+    slug: 'nass-payment-gateway',
+    title: 'NASS Payment Gateway',
+    emoji: '💳',
+    url: 'https://3ds.nass.iq',
+    urlLabel: '3ds.nass.iq',
+    description: 'Secure payment processing gateway for merchants',
+    tags: ['Pure HTML', 'CSS', 'JavaScript'],
+    features: [
+      '3D Secure payment processing',
+      'Real-time transaction handling',
+      'Secure payment authentication',
+    ],
+    role: 'Senior Frontend Developer & Scrum Master',
+    year: '2025',
+    featured: true,
+  },
+  {
+    slug: 'nass-pay-by-link',
+    title: 'NASS Pay by Link',
+    emoji: '💰',
+    url: 'https://pgwmerchant.nass.iq',
+    urlLabel: 'pgwmerchant.nass.iq',
+    description: 'Payment link generation and management system',
+    tags: ['Vue.js', 'Vuetify'],
+    features: [
+      'Merchant management panel',
+      'Admin dashboard',
+      'Payment link creation & tracking',
+      'Transaction analytics',
+    ],
+    role: 'Senior Frontend Developer & Scrum Master',
+    year: '2025',
+    featured: true,
+  },
+]
+
+export const skills: Skill[] = [
+  {
+    category: 'Frontend',
+    items: ['Vue.js', 'Nuxt.js', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vuetify'],
+  },
+  {
+    category: 'State & Data',
+    items: ['Pinia', 'Zod', 'REST APIs', 'Axios'],
+  },
+  {
+    category: 'Architecture',
+    items: ['Component Libraries', 'Composables', 'Design Systems', 'Monorepo'],
+  },
+  {
+    category: 'Process',
+    items: ['Scrum', 'Agile', 'Jira', 'Code Review', 'Technical Writing'],
+  },
+]

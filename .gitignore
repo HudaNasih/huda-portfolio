@@ -43,6 +43,9 @@ bunfig.toml
 # ignore package-lock
 package-lock.json
 
+#ignore pnpm-lock
+pnpm-lock.yaml
+
 #ignore yarn.lock
 yarn.lock
 
