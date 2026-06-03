@@ -34,3 +34,37 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore .npmrc files
+.npmrc
+.yarnrc.yml
+bunfig.toml
+
+# ignore package-lock
+package-lock.json
+
+#ignore yarn.lock
+yarn.lock
+
+#ignore bun.lockb
+bun.lockb
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.local
+*.claude
+*.junie
+
+# IntelliJ
+out/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
