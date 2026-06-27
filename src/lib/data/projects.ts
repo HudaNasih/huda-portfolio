@@ -15,7 +15,7 @@ export const projects: Project[] = [
       'Seller dashboard',
       'Complete order & inventory management',
     ],
-    role: 'Senior Frontend Developer',
+    role: 'Senior Frontend Developer & Frontend Scrum Master',
     year: '2022',
     featured: true,
   },
@@ -33,7 +33,7 @@ export const projects: Project[] = [
       'Merchant admin dashboard',
       'Real-time inventory tracking',
     ],
-    role: 'Senior Frontend Developer',
+    role: 'Senior Frontend Developer & Frontend Scrum Master',
     year: '2022',
     featured: true,
   },
@@ -113,18 +113,42 @@ export const projects: Project[] = [
 export const skills: Skill[] = [
   {
     category: 'Frontend',
-    items: ['Vue.js', 'Nuxt.js', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vuetify'],
+    items: [
+      { name: 'Vue.js', level: 95 },
+      { name: 'Nuxt.js', level: 92 },
+      { name: 'TypeScript', level: 85 },
+      { name: 'Tailwind CSS', level: 90 },
+      { name: 'Vuetify', level: 90 },
+      { name: 'React', level: 70 },
+      { name: 'Next.js', level: 50, learning: true },
+    ],
   },
   {
     category: 'State & Data',
-    items: ['Pinia', 'Zod', 'REST APIs', 'Axios'],
+    items: [
+      { name: 'Pinia', level: 92 },
+      { name: 'REST APIs', level: 94 },
+      { name: 'Axios', level: 90 },
+      { name: 'Zod', level: 78 },
+    ],
   },
   {
     category: 'Architecture',
-    items: ['Component Libraries', 'Composables', 'Design Systems', 'Monorepo'],
+    items: [
+      { name: 'Component Libraries', level: 88 },
+      { name: 'Design Systems', level: 84 },
+      { name: 'Composables', level: 90 },
+      { name: 'Monorepo', level: 76 },
+    ],
   },
   {
     category: 'Process',
-    items: ['Scrum', 'Agile', 'Jira', 'Code Review', 'Technical Writing'],
+    items: [
+      { name: 'Scrum', level: 94 },
+      { name: 'Agile', level: 92 },
+      { name: 'Code Review', level: 88 },
+      { name: 'Jira', level: 86 },
+      { name: 'Technical Writing', level: 80 },
+    ],
   },
 ]

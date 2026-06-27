@@ -1,15 +1,30 @@
 import ProjectCard from '@/components/ui/ProjectCard'
 import { projects } from '@/lib'
+import AnimateOnScroll from '@/components/ui/AnimateOnScroll'
 
 export default function ProjectsSection() {
   const featuredProjects = projects.filter((project) => project.featured)
 
   return (
-    <section id="skills" className="border-t border-white/[0.06] px-7 py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center justify-center gap-6 bg-[#0a0a0a] px-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-        {featuredProjects.map((project, index) => (
-          <ProjectCard key={project.slug} project={project} index={index} />
-        ))}
+    <section id="projects" className="border-t border-white/[0.06] px-6 py-20">
+      <div className="mx-auto max-w-6xl">
+        <AnimateOnScroll>
+          <p className="mb-3 font-mono text-[10px] tracking-[0.3em] text-pink-400">SELECTED WORK</p>
+          <div className="mb-14 flex items-baseline gap-4">
+            <h2 className="font-serif text-4xl font-light tracking-tight text-white">Projects</h2>
+            <span className="font-mono text-sm text-white/20">
+              / {featuredProjects.length} featured
+            </span>
+          </div>
+        </AnimateOnScroll>
+
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {featuredProjects.map((project, index) => (
+            <AnimateOnScroll key={project.slug} delay={index * 70}>
+              <ProjectCard project={project} index={index} />
+            </AnimateOnScroll>
+          ))}
+        </div>
       </div>
     </section>
   )

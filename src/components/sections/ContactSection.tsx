@@ -1,44 +1,57 @@
+import AnimateOnScroll from '@/components/ui/AnimateOnScroll'
+import ContactForm from '@/components/ui/ContactForm'
+
 export default function ContactSection() {
   return (
     <section id="contact" className="border-t border-white/[0.04] px-6 py-24">
       <div className="mx-auto max-w-4xl">
-        <p className="mb-3 font-mono text-xs tracking-[0.3em] text-pink-400">GET IN TOUCH</p>
+        <AnimateOnScroll>
+          <p className="mb-3 font-mono text-[10px] tracking-[0.3em] text-pink-400">GET IN TOUCH</p>
 
-        <h2 className="mb-8 text-5xl leading-tight font-light text-white md:text-6xl">
-          Let&apos;s work
-          <br />
-          <span className="text-white/20">together.</span>
-        </h2>
+          <h2 className="mb-4 font-serif text-5xl leading-tight font-light tracking-tight text-white md:text-6xl">
+            Let&apos;s build
+            <br />
+            <span className="text-white/[0.18]">something great.</span>
+          </h2>
 
-        <p className="mb-12 max-w-md text-base leading-relaxed text-white/40">
-          Open to freelance projects, collaborations, or just a good conversation about frontend
-          architecture.
-        </p>
+          <p className="mb-8 max-w-md text-sm leading-relaxed text-white/40">
+            Open to freelance projects, full-time roles, and collaborations. Drop a message and
+            I&apos;ll get back to you.
+          </p>
 
-        <div className="flex flex-col gap-4 sm:flex-row">
-          <a
-            href="mailto:huda@example.com"
-            className="rounded bg-pink-600 px-8 py-4 text-center font-mono text-sm text-white transition-colors hover:bg-pink-500"
-          >
-            say hello →
-          </a>
-          <a
-            href="https://github.com/HudaNasih"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded border border-white/[0.08] px-8 py-4 text-center font-mono text-sm text-white/50 transition-colors hover:border-white/[0.15] hover:text-white/70"
-          >
-            github
-          </a>
-          <a
-            href="https://www.instagram.com/thedudadoodle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded border border-white/[0.08] px-8 py-4 text-center font-mono text-sm text-white/50 transition-colors hover:border-white/[0.15] hover:text-white/70"
-          >
-            @thedudadoodle
-          </a>
-        </div>
+          <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/[0.07] px-4 py-2">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-400" />
+            <span className="font-mono text-[11px] text-green-300/80">
+              Available for new projects
+            </span>
+          </div>
+        </AnimateOnScroll>
+
+        <AnimateOnScroll delay={100}>
+          <ContactForm />
+        </AnimateOnScroll>
+
+        {/* Social links */}
+        <AnimateOnScroll delay={200}>
+          <div className="mt-10 flex items-center gap-5 border-t border-white/[0.04] pt-8">
+            <a
+              href="https://github.com/HudaNasih"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] tracking-[0.1em] text-white/25 transition-colors hover:text-white/55"
+            >
+              github ↗
+            </a>
+            <a
+              href="https://www.instagram.com/thedudadoodle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] tracking-[0.1em] text-white/25 transition-colors hover:text-white/55"
+            >
+              @thedudadoodle ↗
+            </a>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   )

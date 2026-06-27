@@ -12,7 +12,13 @@ export interface Project {
   role: string
 }
 
+export interface SkillItem {
+  name: string
+  level: number
+  learning?: boolean
+}
+
 export interface Skill {
   category: string
-  items: string[]
+  items: SkillItem[]
 }
