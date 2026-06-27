@@ -22,14 +22,6 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute right-1/4 bottom-1/3 h-72 w-72 rounded-full bg-violet-600/[0.05] blur-[100px]" />
 
       <div className="relative mx-auto max-w-6xl">
-        {/* Next.js learning badge */}
-        <div className="animate-fade-in-down mb-8 inline-flex items-center gap-2.5 rounded-full border border-pink-500/20 bg-pink-500/[0.07] px-4 py-2 [animation-delay:0ms]">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-pink-400" />
-          <span className="font-mono text-[11px] tracking-widest text-pink-300/90">
-            CURRENTLY LEARNING NEXT.JS · BUILT THIS PORTFOLIO WITH IT
-          </span>
-        </div>
-
         {/* Role */}
         <p className="animate-fade-in mb-5 font-mono text-[11px] tracking-[0.35em] text-white/30 [animation-delay:80ms]">
           SENIOR FRONTEND DEVELOPER · SCRUM MASTER
