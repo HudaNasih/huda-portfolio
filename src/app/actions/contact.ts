@@ -2,8 +2,6 @@
 
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export interface ContactState {
   success?: boolean
   error?: string
@@ -26,7 +24,8 @@ export async function sendContactEmail(
     return { error: 'Please enter a valid email address.' }
   }
 
-  if (!process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
     return { error: 'Email service is not configured yet. Please reach out directly.' }
   }
 
@@ -37,6 +36,8 @@ export async function sendContactEmail(
     .replace(/\n/g, '<br>')
   const safeName = name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   const safeEmail = email.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+  const resend = new Resend(apiKey)
 
   try {
     await resend.emails.send({
