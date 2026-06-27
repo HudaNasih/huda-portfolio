@@ -8,7 +8,7 @@ export default function ContactSection() {
         <AnimateOnScroll>
           <p className="mb-3 font-mono text-[10px] tracking-[0.3em] text-pink-400">GET IN TOUCH</p>
 
-          <h2 className="mb-4 font-serif text-5xl leading-tight font-light tracking-tight text-white md:text-6xl">
+          <h2 className="mb-4 font-serif text-4xl leading-tight font-light tracking-tight text-white sm:text-5xl md:text-6xl">
             Let&apos;s build
             <br />
             <span className="text-white/[0.18]">something great.</span>

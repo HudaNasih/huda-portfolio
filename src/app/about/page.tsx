@@ -6,7 +6,7 @@ export default function About() {
       <div className="mx-auto max-w-2xl">
         <p className="mb-3 font-mono text-[10px] tracking-[0.3em] text-pink-400">ABOUT ME</p>
 
-        <h1 className="mb-10 font-serif text-5xl leading-tight font-light tracking-tight text-white">
+        <h1 className="mb-10 font-serif text-4xl leading-tight font-light tracking-tight text-white sm:text-5xl">
           The person
           <br />
           <span className="text-white/[0.18]">behind the code.</span>
@@ -70,16 +70,16 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-10 flex gap-3">
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <Link
             href="/#contact"
-            className="rounded-lg bg-pink-600 px-6 py-3 font-mono text-sm text-white transition-colors hover:bg-pink-500"
+            className="rounded-lg bg-pink-600 px-6 py-3 text-center font-mono text-sm text-white transition-colors hover:bg-pink-500 sm:text-left"
           >
             Get in touch →
           </Link>
           <Link
             href="/"
-            className="rounded-lg border border-white/[0.08] px-6 py-3 font-mono text-sm text-white/45 transition-all hover:border-white/[0.15] hover:text-white/70"
+            className="rounded-lg border border-white/[0.08] px-6 py-3 text-center font-mono text-sm text-white/45 transition-all hover:border-white/[0.15] hover:text-white/70 sm:text-left"
           >
             ← Back home
           </Link>

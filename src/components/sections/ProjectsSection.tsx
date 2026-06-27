@@ -11,7 +11,9 @@ export default function ProjectsSection() {
         <AnimateOnScroll>
           <p className="mb-3 font-mono text-[10px] tracking-[0.3em] text-pink-400">SELECTED WORK</p>
           <div className="mb-14 flex items-baseline gap-4">
-            <h2 className="font-serif text-4xl font-light tracking-tight text-white">Projects</h2>
+            <h2 className="font-serif text-3xl font-light tracking-tight text-white sm:text-4xl">
+              Projects
+            </h2>
             <span className="font-mono text-sm text-white/20">
               / {featuredProjects.length} featured
             </span>

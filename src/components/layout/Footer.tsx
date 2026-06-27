@@ -6,7 +6,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="flex items-center justify-between border-t border-white/[0.06] px-8 py-6">
+    <footer className="flex flex-col items-start gap-4 border-t border-white/[0.06] px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:px-8">
       <span className="font-mono text-[10px] tracking-wider text-white/20 uppercase">
         © {new Date().getFullYear()} Huda Nasih
       </span>
