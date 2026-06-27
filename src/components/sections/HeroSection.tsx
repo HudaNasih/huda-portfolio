@@ -16,7 +16,7 @@ export default function HeroSection() {
       {/* glow */}
       <div className="pointer-events-none absolute top-1/3 left-1/4 h-96 w-96 rounded-full bg-pink-600/10 blur-[120px]" />
 
-      <div className="relative max-w-4xl">
+      <div className="relative mx-auto max-w-7xl">
         <p className="animate-fade-in mb-6 font-mono text-xs tracking-[0.3em] text-pink-400">
           SENIOR FRONTEND DEVELOPER · SCRUM MASTER
         </p>
@@ -24,7 +24,7 @@ export default function HeroSection() {
         <h1 className="animate-fade-in-up mb-8 font-serif text-6xl leading-[0.95] tracking-tight text-white md:text-8xl">
           Huda
           <br />
-          <span className="text-white/20">Nasih</span>
+          <span className="text-white/20">Sarkawt</span>
         </h1>
 
         <p className="animate-fade-in-up mb-12 max-w-xl text-lg leading-relaxed text-white/40 [animation-delay:100ms]">

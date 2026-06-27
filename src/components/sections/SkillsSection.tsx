@@ -3,7 +3,7 @@ import { skills } from '@/lib/data/projects'
 export default function SkillsSection() {
   return (
     <section id="skills" className="border-t border-white/[0.06] px-7 py-16">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-7xl">
         <p className="font-syne mb-3 text-[10px] font-semibold tracking-[0.25em] text-pink-500">
           TOOLKIT
         </p>

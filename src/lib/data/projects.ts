@@ -94,7 +94,7 @@ export const projects: Project[] = [
     slug: 'nass-pay-by-link',
     title: 'NASS Pay by Link',
     emoji: '💰',
-    url: 'https://pgwmerchant.nass.iq',
+    url: 'https://pgwmerchant.nass.iq:9746',
     urlLabel: 'pgwmerchant.nass.iq',
     description: 'Payment link generation and management system',
     tags: ['Vue.js', 'Vuetify'],
